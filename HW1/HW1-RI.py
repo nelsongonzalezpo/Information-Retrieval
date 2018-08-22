@@ -3,10 +3,6 @@ from collections import deque #Importacion para utilizar linked lists
 from os.path import exists #Verificar si existe la palabra (Funcion alterna que se puede utilizar)
 
 
-#Ciclo para seguir preguntando por palabras
-#Las palabras meterlas en una lista
-
-
 #Forma alterna de correr el programa
 
 #archivo = argv
