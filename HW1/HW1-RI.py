@@ -13,7 +13,10 @@ from os.path import exists #Verificar si existe la palabra (Funcion alterna que 
 #Funcion para encontrar la palabra
 def encontrarPalabra():
     #Leer datos del teclado (Palabra)
-    palabra = raw_input("Ingrese la palabra que desea buscar > ")
+    palabras = []
+    palabra = raw_input("Ingrese la palabra que desea buscar > ")#.split(" ")
+    palabras.append(palabra)
+    print palabras
     print ""
     lista = deque([palabra])
     #Un arreglo de archivos vacios
@@ -34,6 +37,7 @@ def encontrarPalabra():
         files.append(archivo)
         #Abrir el archivo
         open(archivo)
+
 
         #Abrir todos los archivos en la iteracion
         for line in open(archivo):
